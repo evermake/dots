@@ -1,0 +1,128 @@
+{
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                              theme & icons
+  "window.autoDetectColorScheme": true, // adjust to os theme
+  "workbench.colorTheme": "Vitesse Dark",
+  "workbench.preferredDarkColorTheme": "Vitesse Dark",
+  "workbench.preferredLightColorTheme": "Vitesse Light",
+  "workbench.iconTheme": "file-icons",
+  "workbench.productIconTheme": "icons-carbon",
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                       font
+  "editor.fontSize": 16,
+  "editor.fontFamily": "'Cascadia Code', Monaco, Menlo, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "workbench.fontAliasing": "antialiased",
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                    general
+  "window.nativeTabs": true,
+  "window.customTitleBarVisibility": "never",
+  "window.titleBarStyle": "custom",
+  "editor.stickyScroll.enabled": true,
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.guides.bracketPairs": "active",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.startupEditor": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.tabActionLocation": "right",
+  "files.simpleDialog.enable": false,
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                               code editing
+  "editor.tabsize": 2,
+  "editor.renderWhitespace": "selection",
+  "editor.detectIndentation": true,
+  "editor.snippetSuggestions": "none",
+  "editor.inlineSuggest.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                     rulers
+  "editor.rulers": [80],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#ff4081"
+  },
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                   terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "terminal.integrated.defaultProfile.osx": "fish",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.scrollback": 10000,
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                        git
+  "git.confirmSync": false,
+  "git.autofetch": false,
+  "git.suggestSmartCommit": false,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                   spelling
+  "editor.unicodeHighlight.allowedLocales": {
+    "ru": true
+  },
+  "cSpell.allowCompoundWords": true,
+  "cSpell.language": "en,en-us,ru,ru-ru",
+  "cSpell.userWords": [],
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                           language-specific
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                               file nesting
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json",
+    "README*": "AUTHORS, BACKERS*, CITATION*, CODE_OF_CONDUCT*, CODEOWNERS, CONTRIBUTING*, CONTRIBUTORS, COPYING, CREDITS, GOVERNANCE.md, HISTORY.md, LICENSE*, MAINTAINERS, README*, SECURITY.md, SPONSORS*",
+    "package.json": "package-lock.json, bun.lockb, pnpm-lock.yaml, pnpm-workspace.yaml"
+  },
+  /////////////////////////////////////////////////////////////////////////////
+  //                                                                 extensions
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+  // codesnap
+  "codesnap.boxShadow": "none",
+  "codesnap.showLineNumbers": false,
+  "codesnap.showWindowControls": false,
+  "codesnap.transparentBackground": true,
+  // copilot
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.editor.enableCodeActions": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+  },
+  // ESLint
+  "eslint.useFlatConfig": true,
+  // Nuxtr 
+  "nuxtr.vueFiles.firstTag": "script",
+  "nuxtr.vueFiles.style.addStyleTag": false,
+  // Vim
+  "vim.normalModeKeyBindings": [
+    { "before": ["L"], "after": ["$"] },
+    { "before": ["H"], "after": ["^"] },
+  ],
+  "vim.easymotion": true,
+}
