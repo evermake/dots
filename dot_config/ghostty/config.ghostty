@@ -1,0 +1,14 @@
+# Appearance
+font-family = Geist Mono
+font-size = 20
+background = #000000
+background-opacity = 0.85
+background-blur-radius = 18
+
+# Toggle fullscreen w/o animation with Command+Enter
+macos-non-native-fullscreen = true
+keybind = alt+enter=toggle_fullscreen
+
+# Fix Option+Backspace removing word to work in Fish
+macos-option-as-alt = true
+
