@@ -1,0 +1,99 @@
+[
+  {
+    "bindings": {
+      // Window & panel controls
+      "alt-enter": "zed::ToggleFullScreen",
+      "cmd-e": "project_panel::Toggle",
+      "cmd-g": "git_panel::Toggle",
+      "cmd-\\": "workspace::ToggleLeftDock",
+      "cmd-shift-w": "workspace::CloseProject",
+    },
+  },
+  {
+    "context": "Editor && mode==full && vim_mode==normal",
+    "bindings": {
+      // Pressing space is like hovering a mouse
+      "space": "editor::Hover",
+      "alt-r": "editor::Rename",
+    },
+  },
+  {
+    "context": "Editor && mode==full && vim_mode==visual",
+    "bindings": {
+      // Indent w/o exiting visual mode
+      "tab": ["workspace::SendKeystrokes", "cmd-]"],
+      "shift-tab": ["workspace::SendKeystrokes", "cmd-["],
+    },
+  },
+  {
+    "context": "(Editor && mode==full && vim_mode==normal) || (Editor && mode==full && vim_mode==visual)",
+    "bindings": {
+      // Movements
+      "shift-h": "vim::StartOfLine",
+      "shift-l": "vim::EndOfLine",
+      "shift-j": "vim::WindowBottom",
+      "shift-k": "vim::WindowTop",
+      // Move lines like in VSCode
+      "alt-k": ["workspace::SendKeystrokes", "alt-up"],
+      "alt-j": ["workspace::SendKeystrokes", "alt-down"],
+    },
+  },
+  {
+    "context": "Editor && mode==full && vim_mode==normal",
+    "bindings": {
+      // Disable undo/redo
+      "u": null,
+      "ctrl-r": null,
+    },
+  },
+  {
+    "context": "vim_operator == a || vim_operator == i || vim_operator == cs",
+    "bindings": {
+      // Smart-surroundings (auto quotes/brackets)
+      "q": "vim::MiniQuotes",
+      "b": "vim::MiniBrackets",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      // Suround selected text
+      "shift-s": "vim::PushAddSurrounds",
+      "cmd-i": "assistant::InlineAssist",
+    },
+  },
+  {
+    "context": "Editor && mode == full && vim_mode == insert",
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist",
+    },
+  },
+  {
+    "context": "Editor && mode == full && vim_mode == insert && vim_operator == none",
+    "bindings": {
+      // Show signature docs when specifying arguments for a method.
+      // "ctrl-space": "editor::ShowSignatureHelp"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-enter": null,
+      "cmd-k": "terminal::Clear",
+      "cmd-i": "assistant::InlineAssist",
+    },
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "%": null,
+      "f": "project_panel::NewFile",
+    },
+  },
+  {
+    "context": "Workspace || Editor",
+    "bindings": {
+      "cmd-|": "multi_workspace::ToggleWorkspaceSidebar"
+    }
+  }
+]

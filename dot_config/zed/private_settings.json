@@ -1,0 +1,99 @@
+{
+  "proxy": "",
+  "language_models": {
+    "opencode": {
+      "show_go_models": false
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "effort": "medium",
+        "model": "sonnet",
+        "mode": "auto"
+      },
+      "type": "registry"
+    }
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
+  "theme": "Ayu Dark",
+  "diff_view_style": "unified",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "show_wrap_guides": true,
+  "wrap_guides": [80],
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "format_on_save": "off",
+  "tab_size": 2,
+  // ===========================================================================
+  // AI
+  // ===========================================================================
+  "show_edit_predictions": false,
+  "agent": {
+    "play_sound_when_agent_done": "when_hidden",
+    "use_modifier_to_send": true,
+    "auto_compact": {
+      "enabled": false
+    },
+    "dock": "right",
+    "inline_assistant_model": {
+      "provider": "opencode",
+      "model": "zen/claude-sonnet-5",
+      "enable_thinking": false
+    },
+    "default_model": {
+      "provider": "opencode",
+      "model": "zen/claude-sonnet-5",
+      "enable_thinking": false,
+    },
+  },
+  // ===========================================================================
+  // Vim
+  // ===========================================================================
+  "vim_mode": true,
+  "vim": {
+    "toggle_relative_line_numbers": true,
+  },
+  // ===========================================================================
+  // Languages
+  // ===========================================================================
+  "languages": {
+    "JavaScript": {
+      "use_on_type_format": false,
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+      "format_on_save": "on",
+      "formatter": [],
+    },
+    "TypeScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+      "format_on_save": "on",
+      "formatter": "none",
+    },
+    "TSX": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": true,
+      },
+      "format_on_save": "on",
+      "formatter": [],
+    },
+  },
+}
