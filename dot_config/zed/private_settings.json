@@ -1,4 +1,8 @@
 {
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
   "proxy": "",
   "language_models": {
     "opencode": {
@@ -30,10 +34,6 @@
   },
   "theme": "Ayu Dark",
   "diff_view_style": "unified",
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false,
-  },
   "show_wrap_guides": true,
   "wrap_guides": [80],
   "ui_font_size": 16,
@@ -61,6 +61,14 @@
       "model": "zen/claude-sonnet-5",
       "enable_thinking": false,
     },
+  },
+  // ===========================================================================
+  // Terminal
+  // ===========================================================================
+  "terminal": {
+    "shell": {
+      "program": "/opt/homebrew/bin/fish"
+    }
   },
   // ===========================================================================
   // Vim
